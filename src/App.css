@@ -1,0 +1,127 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f9fc;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.main-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.welcome-page {
+  flex: 2;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  min-height: 500px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.welcome-text h1 {
+  font-size: 32px;
+  color: #333;
+  margin: 0;
+}
+
+.welcome-text p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 300px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.settings-panel {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.settings-panel h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.settings-panel input,
+.settings-panel textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.settings-panel .image-preview {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.settings-panel .image-preview img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.discard-btn {
+  background-color: transparent;
+  color: red;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.success-message {
+  text-align: center;
+  padding: 20px;
+}
+
+.success-message h1 {
+  color: green;
+  margin: 0;
+}
+
+.success-message p {
+  font-size: 18px;
+  color: #555;
+}

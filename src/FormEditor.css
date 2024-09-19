@@ -1,0 +1,238 @@
+:root {
+    --primary-color: #007bff;
+    --primary-hover-color: #0056b3;
+    --text-color-dark: #333;
+    --text-color-medium: #555;
+    --text-color-light: rgb(46, 45, 45);
+    --background-color-light: #ffffff;
+    --border-color: #ccc;
+    --box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    --font-family: 'Roboto', sans-serif;
+    --font-size-large: 32px;
+    --font-size-medium: 18px;
+    --font-size-small: 16px;
+    --border-radius: 12px;
+    --btn-padding: 12px 24px;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f9fc;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+.welcome-page {
+    flex: 2;
+    padding: 20px;
+    background-color: var(--background-color-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 600px;
+    min-height: 500px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.welcome-text {
+    text-align: left;
+    max-width: 100%;
+}
+
+.welcome-text h1 {
+    font-size: var(--font-size-large);
+    color: var(--text-color-dark);
+    margin: 0;
+}
+
+.welcome-text p {
+    font-size: var(--font-size-medium);
+    color: var(--text-color-medium);
+    word-wrap: break-word;
+}
+
+.welcome-text .btn {
+    margin-top: 20px;
+    padding: var(--btn-padding);
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-text .btn:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.welcome-image.left {
+    text-align: left;
+}
+
+.welcome-image.right {
+    text-align: right;
+}
+
+.welcome-image img {
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 20px;
+}
+
+.settings-panel {
+    flex: 1;
+    background-color: var(--background-color-light);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.settings-panel h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--text-color-dark);
+}
+
+.settings-panel input,
+.settings-panel textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    font-size: var(--font-size-small);
+}
+
+.settings-panel .image-preview {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-container {
+    margin-top: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.settings-panel label {
+    color: var(--text-color-light);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.settings-panel input,
+.settings-panel textarea {
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+.image-preview .btn {
+    margin-right: 8px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font-size: var(--font-size-small);
+}
+
+.btn:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.placement-btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.discard-btn,
+.remove-btn {
+    background-color: transparent;
+    color: red;
+    border: none;
+    cursor: pointer;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-frame {
+    background-color: var(--background-color-light);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    width: 400px;
+}
+
+.login-frame h1 {
+    margin-bottom: 20px;
+    color: var(--text-color-dark);
+}
+
+.login-frame input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.error {
+    color: red;
+}
+
+.success-message {
+    text-align: center;
+    padding: 20px;
+}
+
+.success-message h1 {
+    color: green;
+}
+
+.success-message p {
+    font-size: var(--font-size-medium);
+    color: var(--text-color-medium);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .welcome-page,
+    .settings-panel {
+        width: 100%;
+        max-width: none;
+        min-height: auto;
+        max-height: none;
+    }
+}
